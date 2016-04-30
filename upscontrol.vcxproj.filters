@@ -21,6 +21,9 @@
     <ClCompile Include="upscontrol.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="driver\uart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="user_config.h">
@@ -30,6 +33,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="intellisense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\driver\uart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\driver\uart_register.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

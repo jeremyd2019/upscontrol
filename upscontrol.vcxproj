@@ -14,10 +14,13 @@
     <None Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="driver\uart.c" />
     <ClCompile Include="upscontrol.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="espmissingincludes.h" />
+    <ClInclude Include="include\driver\uart.h" />
+    <ClInclude Include="include\driver\uart_register.h" />
     <ClInclude Include="intellisense.h" />
     <ClInclude Include="user_config.h" />
   </ItemGroup>
@@ -54,7 +57,7 @@
     <NMakeCleanCommandLine>gmake clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>gmake clean all</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>__ets__;_DEBUG</NMakePreprocessorDefinitions>
-    <NMakeIncludeSearchPath>D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\include;D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\sysroot\usr\include</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(ProjectDir)\include;D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\include;D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\sysroot\usr\include</NMakeIncludeSearchPath>
     <ExecutablePath>D:\esp8266\esp-open-sdk\xtensa-lx106-elf\bin;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
     <OutDir>$(SolutionDir)</OutDir>
     <IntDir>$(SolutionDir)</IntDir>
@@ -66,7 +69,7 @@
     <NMakeCleanCommandLine>gmake clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>gmake clean all</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>__ets__;NDEBUG</NMakePreprocessorDefinitions>
-    <NMakeIncludeSearchPath>D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\include;D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\sysroot\usr\include</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(ProjectDir)\include;D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\include;D:\esp8266\esp-open-sdk\xtensa-lx106-elf\xtensa-lx106-elf\sysroot\usr\include</NMakeIncludeSearchPath>
     <ExecutablePath>D:\esp8266\esp-open-sdk\xtensa-lx106-elf\bin;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
     <OutDir>$(SolutionDir)</OutDir>
     <IntDir>$(SolutionDir)</IntDir>

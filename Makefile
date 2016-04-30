@@ -1,6 +1,6 @@
 CC = xtensa-lx106-elf-gcc
 CXX = xtensa-lx106-elf-g++
-CFLAGS = -D__ets__ -DICACHE_FLASH -I. -mlongcalls -Os -mtext-section-literals -falign-functions=4 -ffunction-sections -fdata-sections
+CFLAGS = -D__ets__ -DICACHE_FLASH -I. -Iinclude -mlongcalls -Os -mtext-section-literals -falign-functions=4 -ffunction-sections -fdata-sections
 CXXFLAGS = $(CFLAGS) -fno-rtti -fno-exceptions -std=c++11
 LDLIBS = -nostdlib -Wl,-static -Wl,--gc-sections -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -lcrypto -lcirom -lstdc++irom -lnewlibport -lstdc++port -Wl,--end-group -lgcc
 LDFLAGS = -Teagle.app.v6.4096.irom.ld
@@ -8,7 +8,8 @@ BOARDOPTS = -ff 40m -fm qio -fs 32m
 RM = del
 
 PROJECT = upscontrol
-OBJS = upscontrol.o
+OBJS = upscontrol.o \
+       driver/uart.o
 
 all: $(PROJECT)-0x00000.bin
 
