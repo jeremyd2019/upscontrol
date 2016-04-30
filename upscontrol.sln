@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "upscontrol", "upscontrol.vcxproj", "{80823CA4-37AB-4446-AE3A-33EE0B7DA313}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|esp8266 = Debug|esp8266
+		Release|esp8266 = Release|esp8266
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80823CA4-37AB-4446-AE3A-33EE0B7DA313}.Debug|esp8266.ActiveCfg = Debug|Win32
+		{80823CA4-37AB-4446-AE3A-33EE0B7DA313}.Debug|esp8266.Build.0 = Debug|Win32
+		{80823CA4-37AB-4446-AE3A-33EE0B7DA313}.Release|esp8266.ActiveCfg = Release|Win32
+		{80823CA4-37AB-4446-AE3A-33EE0B7DA313}.Release|esp8266.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

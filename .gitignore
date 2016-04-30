@@ -1,0 +1,7 @@
+*.o
+upscontrol
+upscontrol-0x*.bin
+*.vcxproj.user
+*.map
+*.log
+obj
